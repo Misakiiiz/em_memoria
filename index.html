@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Memoriam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <h1>In Memoriam</h1>
+            <p><em>Por <span class="author">Redação</span></em></p>
+            <hr>
+            <p>
+                Normalmente, eu não trago assuntos muito tristes para
+                vocês, leitores, mas eu resolvi abrir uma exceção para
+                esse caso. É com grande pesar que fazemos um ano de
+                aniversário desde o incêndio na fábrica têxtil da cidade
+                no dia 21 de Fevereiro de 2021. Foi um período difícil,
+                onde muitos de nossa cidade ficaram com o coração na
+                mão enquanto a fábrica ficava em chamas e os bombeiros
+                tentavam tirar as crianças dos escombros.
+            </p>
+            <p>
+                Foi um grande infortúnio. Naquele fatídico dia, uma escola
+                primária estava visitando a fábrica para aprender sobre
+                a indústria da cidade. O incêndio, com origem ainda
+                desconhecida, se alastrou por toda a fábrica e começou
+                a derrubar a estrutura. Muitas pessoas ficaram presas
+                nos escombros e não sobreviveram. Algumas delas eram
+                crianças. Foi um momento terrível. Uma perda enorme
+                para todos.
+            </p>
+            <p>
+                Pedimos que todos se juntem em uma oração coletiva
+                nessa quarta-feira de noite, lá na praça da cidade. Vamos
+                orar pelas almas dessas pessoas e pela coragem daqueles
+                que ficaram aqui.
+            </p>
+            <p><strong>Amém.</strong></p>
+            <hr>
+            <p class="comments"><a href="#">32 comentários</a> | <a href="#">Subscrever</a></p>
+        </main>
+        <aside>
+            <input type="text" placeholder="Pesquisar...">
+            <div class="news">
+                <h3><a href="#">Como fazer pão caseiro</a></h3>
+                <p>Aprenda o passo a passo para preparar um delicioso pão caseiro com ingredientes simples.</p>
+            </div>
+            <div class="news">
+                <h3><a href="#">Aumento do dólar</a></h3>
+                <p>O dólar atinge nova alta e impacta a economia do país. Veja como isso pode afetar seu bolso.</p>
+            </div>
+            <div class="news">
+                <h3><a href="#">Carnaval em SP</a></h3>
+                <p>Confira tudo sobre a grande festa de Carnaval que vai agitar a cidade de São Paulo neste fim de semana.</p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    margin-left: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+.comments a {
+    text-decoration: none;
+    color: #007BFF;
+}
+input {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+.news {
+    background: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.news h3 {
+    margin: 0 0 5px;
+}
+.news a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        margin-left: 0;
+    }
+}
+</style>
